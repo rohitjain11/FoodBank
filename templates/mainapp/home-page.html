@@ -1,0 +1,59 @@
+{%load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to FoodBank</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{%static 'css/home.css'%}">
+        <!-- jQuery library -->        
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="logo" >
+                <a class="" href="{%url 'home'%}"><h1>FOODBANK</h1></a>
+            </div>
+            <div class="menu">
+                <ul class="nav-ul">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#wedo">What we do</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="myacc">
+                <ul>
+                <li><a href="{%url 'registertype'%}"><span class=""></span> Sign Up</a></li>
+                <li><a href="{%url 'logintype'%}"><span class=""></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="image">
+                <h3>Why Don't waste food</h3>
+                <img src="{%static 'images/hunger22.jpg'%}">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi ex quae nobis sequi asperiores, repellendus laboriosam officiis veniam exercitationem alias explicabo beatae sunt, ea consequuntur ipsa consectetur labore cum!</p>
+            </div>
+        </div>
+        <div class="blog">
+                <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi ex quae nobis sequi asperiores, repellendus laboriosam officiis veniam exercitationem alias explicabo beatae sunt, ea consequuntur ipsa consectetur labore cum!</p>
+                    </div>
+                <div class="image">
+                    <h3>What we Do</h3>
+                    <img src="{%static 'images/donpic.jpg'%}">
+                </div>
+        </div>
+        <div class="blog">
+                <div class="image">
+                    <h3>What you have to Do</h3>
+                    <img src="{%static 'images/donbox.jpg'%}">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi ex quae nobis sequi asperiores, repellendus laboriosam officiis veniam exercitationem alias explicabo beatae sunt, ea consequuntur ipsa consectetur labore cum!</p>
+                </div>
+        </div>
+    </body>
+</html>

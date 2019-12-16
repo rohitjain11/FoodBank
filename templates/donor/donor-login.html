@@ -1,0 +1,29 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donar login</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{%static 'css/index.css'%}" type="text/css">
+    </head>
+    <body id="main">
+         <div class="login-box">
+             <img src="{%static 'images/user-icon.jpg'%}" class="avatar">
+             <h1>Donor Login</h1>
+             <form method="POST" action="{%url 'donorlogin'%}">
+                {% csrf_token %}
+                 <p>Login Id</p>
+                 <input type="email" name="email" placeholder="enter email">
+                 <p>Password</p>
+                 <input type="password" name="pword" placeholder="enter password">
+                 <input type="submit" name="submit" value="login"><h3>{{msg}}</h3>
+             </form>
+             <br>
+             <a href="#">Forgot Password ?</a>
+             <br><br>
+             <a href="#">Sign Up</a>
+
+        </div>    
+
+    </body>
+</html>

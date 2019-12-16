@@ -1,0 +1,47 @@
+{%load staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>Donor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+<link rel="stylesheet" href="{%static 'css/profile.css'%}">
+<link rel="stylesheet" href="{%static 'css/index.css'%}" type="text/css">
+<body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <h3>FOODBANK</h3>
+                </div>
+                <div>
+                        <ul>
+                                <li><a href="#"><Span>Donor : {{dd.f_name}}</Span></a></li>
+                                <li><a href="{%url 'logout'%}">LogOut</a></li>
+                
+                        </ul>
+                </div>
+                
+            </div>
+        </header>
+        <div class="login-box1">
+            <h1>Food List</h1>
+                <form method="POST" action="{%url 'donate'%}">
+                   {% csrf_token %}
+                   <input type="hidden" name="donor_id" value={{dd.id}} >
+                    <p>Food name</p>
+                    <input type="text" name="food_name" placeholder="enter food name" required>
+                    <p>Food QTY</p>
+                    <input type="text" name="food_qty" placeholder="food qty" required>
+                    <input type="submit" name="submit" value="Donate food">
+                    <h4>{{msg}}</h4>
+                </form>
+        </div>    
+
+    
+  </body>
+</html>

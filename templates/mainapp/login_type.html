@@ -1,0 +1,18 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donar login</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{%static 'css/index.css'%}" type="text/css">
+    </head>
+    <body id="main">
+         <div class="choice-box">
+             <h1> Login account Type   </h1>                         
+             <a href="{%url 'donorlogin'%}"><h1>Donor Login</h1></a>
+             <a href="{%url 'ngologin' %}"><h1>NGO Login</h1></a>
+             <a href="{%url 'volunteerlogin' %}"><h1>Volunteer Login</h1></a>
+        </div>    
+
+    </body>
+</html>

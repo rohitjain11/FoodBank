@@ -1,0 +1,40 @@
+{%load staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>Donor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+<link rel="stylesheet" href="{%static 'css/home.css'%}">
+<link rel="stylesheet" href="{%static 'css/index.css'%}" type="text/css">
+<body>
+
+  <!-- Header -->
+  <div class="navigation">
+        <div class="logo" >
+            <a class="" href="{%url 'home'%}"><h1>FOODBANK</h1></a>
+        </div>
+       
+        <div class="profile">
+            <ul>
+            
+            <li><a href="{%url 'logout'%}"><span class=""></span> Log out</a></li>
+            <li><a href="#"><span class="">NGO : {{ f_name}}</span></a></li>
+            </ul>
+        </div>
+        <div class="">
+                
+                
+   
+        </div>    
+    </div>
+
+  
+ 
+</body>
+</html>

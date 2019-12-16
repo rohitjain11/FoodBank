@@ -1,0 +1,36 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donar login</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{%static 'css/register.css'%}" type="text/css">
+    </head>
+    <body id="main">
+         <div class="r-box">
+             <img src="{%static 'images/user-icon.jpg'%}" class="avatar">
+             
+             <h1>Volunteer register</h1>
+             <form method="POST" action="{%url 'volunteerregister'%}">
+                {% csrf_token %}
+                 <p>First Name</p>
+                 <input type="text" name="f_name" placeholder="eg. Rohit">
+                 <p>Last Name</p>
+                 <input type="text" name="l_name" placeholder="eg. Jain">
+                 <p>Contact Number</p>
+                 <input type="text" name="v_num" placeholder="eg. 8822554466" maxlength="10">
+                 <p>Address</p>
+                 <input type="text" name="v_addr" placeholder="Enter your Location ">
+                 <p>Adhaar Number</p>
+                 <input type="text" name="v_adhaar" placeholder="eg. 8888-2222-3333-8888" maxlength="12">
+                 <p>Email</p>
+                 <input type="email" name="email" placeholder="enter email">
+                 <p>Password</p>
+                 <input type="password" name="pword" placeholder="enter password">
+                 <input type="submit" name="submit" value="Register">
+             </form>
+             
+        </div>    
+
+    </body>
+</html>

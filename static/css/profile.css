@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: grid;
+}
+header{
+    height: 100px;
+    width: 100%;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 20px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    font-size: larger;
+    margin: 5px;
+}
+ul li span{
+    font-size: large;
+}
+.logo{
+    padding-left: 20px;
+    padding-left: 50px;
+}
+.logo h3{
+    padding: 7px;
+    margin-top: 16px;
+    background-color: orange;
+}
+
+.login-box1{
+    width: 320px;
+    height: 420px;
+    background: rgba(49, 182, 16, 0.884);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login-box1 p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.login-box1 input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box1 input[type='text']{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    font-size: 16px;
+
+}
+.login-box1 input[type='submit']{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.login-box1 input[type='submit']:hover{
+    cursor: pointer;
+    background: #39dc79;
+    color:#000;
+
+}
+.orderlist{
+    width: 850px;
+    grid-template-columns: 100%;
+    min-height: 600px;
+    background: rgba(7, 228, 37, 0.5);
+    color: #000;
+    margin-left: 20%;
+    padding-left: 20px;
+    
+}
+.orderlist h3{
+    text-align: center;
+    text-decoration-style: solid;
+}
+.orderlist table tr th, .orderlist table tr td  {
+    border: 1px solid blue;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    text-align: center;
+}
+.orderlist a{
+    padding: 10px;
+    background-color: darkblue;
+}
